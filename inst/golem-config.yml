@@ -1,0 +1,9 @@
+default:
+  golem_name: tableApp
+  golem_version: 0.0.0.9000
+  app_prod: no
+  POSTGRES: localhost
+production:
+  app_prod: yes
+dev:
+  golem_wd: !expr here::here()
