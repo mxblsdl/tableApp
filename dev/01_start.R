@@ -21,10 +21,10 @@
 golem::fill_desc(
   pkg_name = "tableApp", # The Name of the package containing the App
   pkg_title = "PKG_TITLE", # The Title of the package containing the App
-  pkg_description = "PKG_DESC.", # The Description of the package containing the App
-  author_first_name = "AUTHOR_FIRST", # Your First Name
-  author_last_name = "AUTHOR_LAST", # Your Last Name
-  author_email = "AUTHOR@MAIL.COM", # Your Email
+  pkg_description = "A simple react table application built with Golem.", # The Description of the package containing the App
+  author_first_name = "Max", # Your First Name
+  author_last_name = "Blasdel", # Your Last Name
+  author_email = "maxblasdel@gmail.com", # Your Email
   repo_url = NULL # The URL of the GitHub Repo (optional)
 )
 
@@ -33,7 +33,7 @@ golem::set_golem_options()
 
 ## Create Common Files ----
 ## See ?usethis for more information
-usethis::use_mit_license("Golem User") # You can set another license here
+usethis::use_mit_license("Max Blasdel") # You can set another license here
 usethis::use_readme_rmd(open = FALSE)
 # Note that `contact` is required since usethis version 2.1.5
 # If your {usethis} version is older, you can remove that param
@@ -43,6 +43,7 @@ usethis::use_news_md(open = FALSE)
 
 ## Use git ----
 usethis::use_git()
+usethis::use_github() # NEW
 
 ## Init Testing Infrastructure ----
 ## Create a template for tests
