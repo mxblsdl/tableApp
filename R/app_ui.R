@@ -9,9 +9,11 @@ app_ui <- function(request) {
     # Leave this function for adding external resources
     golem_add_external_resources(),
     # Your application UI logic
-    fluidPage(
-      h1("tableApp")
-    )
+    fluidPage(fluidRow(h1("tableApp"),
+                       mod_table1_ui("table1_1")),
+              fluidRow(
+                mod_js_button_ui("js_button_1"))
+              )
   )
 }
 

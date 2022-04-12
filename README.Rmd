@@ -24,7 +24,11 @@ The goal of tableApp is to create a simple app with the Golem framework. This is
 ## Installation
 
 You can install the development version of tableApp like so:
-!TODO
+
+### TODO
+- Understand full development cycle
+- How to run app in prod
+- Set up github action to render rmd on push
 
 ``` r
 # FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
