@@ -7,10 +7,11 @@
 r_table(table, key, bg)
 }
 \arguments{
-\item{bg}{}
-}
-\value{
+\item{table}{Unfiltered datatable from}
 
+\item{key}{Filter key, will be index in practice}
+
+\item{bg}{background color specs}
 }
 \description{
 reactTable Template

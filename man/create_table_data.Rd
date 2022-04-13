@@ -7,10 +7,7 @@
 create_table_data(url)
 }
 \arguments{
-\item{url}{}
-}
-\value{
-
+\item{url}{website to visit}
 }
 \description{
 Create Data

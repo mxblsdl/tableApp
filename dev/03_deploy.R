@@ -19,6 +19,7 @@ devtools::check()
 rhub::check_for_cran()
 
 # Deploy
+remotes::install_local()
 
 ## Local, CRAN or Package Manager ----
 ## This will build a tar.gz that can be installed locally,
