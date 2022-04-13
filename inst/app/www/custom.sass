@@ -1,0 +1,14 @@
+// Define a variable for color
+$color: purple
+
+// Define a function with the ,ixin keyword
+@mixin borders($col)
+  border:
+    style: solid
+    width: 2px
+    color: $col
+
+// Apply the function to all of the rows
+// Passing the variable to the function
+.row
+  @include borders($color)

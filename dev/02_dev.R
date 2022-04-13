@@ -32,9 +32,9 @@ golem::add_utils("helpers", with_test = TRUE)
 golem::add_js_file("script")
 golem::add_js_handler("handlers")
 golem::add_css_file("custom")
-golem::add_sass_file("custom")
+golem::add_sass_file("custom",   )
 
-
+golem::sass_template()
 ## Add internal datasets ----
 ## If you have data in your package
 usethis::use_data_raw(name = "my_dataset", open = FALSE)
@@ -64,7 +64,9 @@ covrpage::covrpage()
 usethis::use_github()
 
 # GitHub Actions
-usethis::use_github_action()
+usethis::use_github_action("render-rmarkdown")
+
+
 # Chose one of the three
 # See https://usethis.r-lib.org/reference/use_github_action.html
 usethis::use_github_action_check_release()

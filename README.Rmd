@@ -38,8 +38,10 @@ golem::add_js_handler("handlers")
 - The js handler function links events in Shiny with custom javascript. 
 - `inst/app/www/handlers.js` shows an example
 
-### (S)CSS Development
-**TODO add information about custom CSS**
+### SASS Development
+- Golem uses `.sass` *not* `.scss`
+- Create sass file with `golem::add_sass_file(<STYLES>)`
+- sass is compiled in `run_dev.R`
 
 ## Interations
 - Run `dev/run_dev.R`
@@ -56,8 +58,7 @@ golem::add_js_handler("handlers")
 ### TODO
 - How to run app in prod
 - Set up github action to render rmd on push
-- Add scss file
-
+  
 ### Render readme notes
 You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this. You could also use GitHub Actions to re-render `README.Rmd` every time you push. An example workflow can be found here: <https://github.com/r-lib/actions/tree/v1/examples>.
 
