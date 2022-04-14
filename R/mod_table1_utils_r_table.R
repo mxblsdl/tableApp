@@ -8,7 +8,7 @@
 #'
 r_table <- function(table, key, bg) {
   t <- table[table["Keyword"] == key, ]
-  t <- setNames(t["Topic"], "Details")
+  t <- stats::setNames(t["Topic"], "Details")
 
   reactable(
     t,

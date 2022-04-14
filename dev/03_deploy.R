@@ -19,6 +19,7 @@ devtools::check()
 rhub::check_for_cran()
 
 # Deploy
+golem::detach_all_attached()
 remotes::install_local()
 
 ## Local, CRAN or Package Manager ----

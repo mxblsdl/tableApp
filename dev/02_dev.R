@@ -67,8 +67,8 @@ usethis::use_github_action("render-rmarkdown")
 # # Add action for PR
 # usethis::use_github_action_pr_commands()
 
-devtools::build_readme()
-rmarkdown::pandoc_available()
+devtools::build_readme() # needs to be run from RStudio or set pandoc path for VS Code
+
 # You're now set! ----
 # go to dev/03_deploy.R
 rstudioapi::navigateToFile("dev/03_deploy.R")
