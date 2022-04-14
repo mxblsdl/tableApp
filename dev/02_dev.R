@@ -61,12 +61,14 @@ usethis::use_github_action("render-rmarkdown")
 
 # Chose one of the three
 # See https://usethis.r-lib.org/reference/use_github_action.html
-usethis::use_github_action_check_release()
-usethis::use_github_action_check_standard()
-usethis::use_github_action_check_full()
-# Add action for PR
-usethis::use_github_action_pr_commands()
+# usethis::use_github_action_check_release()
+# usethis::use_github_action_check_standard()
+# usethis::use_github_action_check_full()
+# # Add action for PR
+# usethis::use_github_action_pr_commands()
 
+devtools::build_readme()
+rmarkdown::pandoc_available()
 # You're now set! ----
 # go to dev/03_deploy.R
 rstudioapi::navigateToFile("dev/03_deploy.R")
